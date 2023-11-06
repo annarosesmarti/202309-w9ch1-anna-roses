@@ -1,0 +1,38 @@
+:root {
+  --main-font: arial;
+  --main-color: #000;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+}
+
+html {
+  font-family: var(--main-font);
+}
+
+body {
+  font-size: var(--main-color);
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  padding: 0;
+}
+
+.main-container {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+}
