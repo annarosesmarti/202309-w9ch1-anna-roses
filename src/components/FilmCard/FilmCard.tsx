@@ -1,4 +1,5 @@
 import { FilmsStructure } from "../../store/types";
+import FilmCardStyled from "./FilmCardStyled";
 
 interface FilmsProps {
   film: FilmsStructure;
@@ -6,7 +7,7 @@ interface FilmsProps {
 
 const FilmCard = ({ film }: FilmsProps): React.ReactElement => {
   return (
-    <div className="film">
+    <FilmCardStyled>
       <h2 className="film__title">{film.title}</h2>
       <span className="film__year">{`Year: ${film.year}`}</span>
       <img
@@ -16,7 +17,7 @@ const FilmCard = ({ film }: FilmsProps): React.ReactElement => {
         width={317}
         height={450}
       />
-    </div>
+    </FilmCardStyled>
   );
 };
 
