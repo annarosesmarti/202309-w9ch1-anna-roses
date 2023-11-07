@@ -20,7 +20,7 @@ body {
   font-family: ${({ theme }) => theme.typography.mainFontFamily};
   font-size: ${({ theme }) => theme.typography.textSize};
   color: ${({ theme }) => theme.color.mainFontColor};
-  background-color: ${({ theme }) => theme.color.mainBackground};
+  background-color: ${({ theme }) => theme.color.containerBackground};
 }
 
 ul {
