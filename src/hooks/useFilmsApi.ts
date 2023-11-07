@@ -4,7 +4,7 @@ import { FilmsStructure } from "../store/types";
 const useFilmsApi = () => {
   const apiUrl = import.meta.env.VITE_API_URL;
 
-  const getFilms = useCallback(async () => {
+  const getFilms = useCallback(async (): Promise<FilmsStructure[]> => {
     const response = await fetch(`${apiUrl}/films`);
     const films = (await response.json()) as FilmsStructure[];
 
