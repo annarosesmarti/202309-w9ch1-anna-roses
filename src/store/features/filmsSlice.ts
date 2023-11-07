@@ -5,22 +5,20 @@ const initialFilmsState: FilmsStateStructure = {
   films: [],
 };
 
-export const filmsSlice = createSlice({
+const filmsSlice = createSlice({
   name: "films",
   initialState: initialFilmsState,
   reducers: {
     loadFilms: (
-      currentState: FilmsStateStructure,
+      currentState,
       action: PayloadAction<FilmsStructure[]>,
-    ): FilmsStateStructure => {
-      return {
-        ...currentState,
-        films: action.payload,
-      };
-    },
+    ): FilmsStateStructure => ({
+      ...currentState,
+      films: action.payload,
+    }),
   },
 });
 
-export const { loadFilms: loadCharactersActionCreator } = filmsSlice.actions;
+export const { loadFilms: loadFilmsActionCreator } = filmsSlice.actions;
 
-export default filmsSlice.reducer;
+export const filmsReducer = filmsSlice.reducer;
