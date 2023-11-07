@@ -12,7 +12,8 @@ declare module "styled-components" {
       mainFontFamily: string;
       titleSize: string;
       subtitleSize: string;
-      textSize: string;
+      cardTitleSize: string;
+      cardTextSize: string;
     };
   }
 }

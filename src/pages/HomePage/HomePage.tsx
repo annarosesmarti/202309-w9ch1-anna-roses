@@ -20,7 +20,7 @@ const HomePage = (): React.ReactElement => {
     <HomePageStyled>
       <header className="title-container">
         <h1 className="title">Harry Potter</h1>
-        <span className="title__text">The movies</span>
+        <span className="title__text">· The movies ·</span>
       </header>
       <FilmsList />
     </HomePageStyled>

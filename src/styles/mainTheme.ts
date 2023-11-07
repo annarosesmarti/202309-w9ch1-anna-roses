@@ -11,7 +11,8 @@ const mainTheme: DefaultTheme = {
     mainFontFamily: "'Montserrat', 'sans-serif'",
     titleSize: "2.5rem",
     subtitleSize: "1.7rem",
-    textSize: "1.25rem",
+    cardTitleSize: "1.25rem",
+    cardTextSize: "1rem",
   },
 };
 
