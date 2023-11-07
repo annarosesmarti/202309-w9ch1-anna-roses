@@ -9,12 +9,12 @@ const HomePageStyled = styled.main`
   }
 
   .title {
-    font-size: 2rem;
+    font-size: ${({ theme }) => theme.typography.titleSize};
     padding-bottom: 15px;
     color: ${({ theme }) => theme.color.titleFontColor};
 
     &__text {
-      font-size: 1.5rem;
+      font-size: ${({ theme }) => theme.typography.subtitleSize};
       color: ${({ theme }) => theme.color.titleFontColor};
     }
   }

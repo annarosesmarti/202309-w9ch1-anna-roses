@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: ${({ theme }) => theme.typography.mainFontFamily};
-  font-size: ${({ theme }) => theme.typography.textSize};
+  font-size: ${({ theme }) => theme.typography.cardTextSize};
   color: ${({ theme }) => theme.color.mainFontColor};
   background-color: ${({ theme }) => theme.color.containerBackground};
 }
