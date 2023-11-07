@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import useFilmsApi from "../../hooks/useFilmsApi";
 import { loadFilmsActionCreator } from "../../store/features/filmsSlice";
 import FilmsList from "../../components/FilmsList/FilmsList";
+import HomePageStyled from "./HomePageStyled";
 
 const HomePage = (): React.ReactElement => {
   const { getFilms } = useFilmsApi();
@@ -16,13 +17,13 @@ const HomePage = (): React.ReactElement => {
   }, [dispatch, getFilms]);
 
   return (
-    <main>
+    <HomePageStyled>
       <header className="title-container">
         <h1 className="title">Harry Potter</h1>
         <span className="title__text">The movies</span>
       </header>
       <FilmsList />
-    </main>
+    </HomePageStyled>
   );
 };
 
