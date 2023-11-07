@@ -1,6 +1,7 @@
 :root {
   --main-font: arial;
   --main-color: #000;
+  --main-bacground-color: #fec844;
 }
 
 *,
@@ -33,6 +34,40 @@ ul {
   padding: 20px;
 }
 
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
 .title {
+  font-size: 2rem;
+  padding-bottom: 15px;
+}
+
+.title__text {
+  font-size: 1.5rem;
+}
+
+.films {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.film {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--main-bacground-color);
+  border-radius: 5%;
+  padding: 30px;
+  width: 500px;
+}
+
+.film__title {
   text-align: center;
 }
