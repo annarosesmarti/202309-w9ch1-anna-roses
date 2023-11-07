@@ -1,4 +1,5 @@
 import { useAppSelector } from "../../store/hooks";
+import FilmCard from "../FilmCard/FilmCard";
 
 const FilmsList = (): React.ReactElement => {
   const films = useAppSelector((state) => state.filmsState.films);
@@ -6,16 +7,8 @@ const FilmsList = (): React.ReactElement => {
   return (
     <ul className="films">
       {films.map((film) => (
-        <li className="film" key={film.id}>
-          <h2 className="film__title">{film.title}</h2>
-          <span className="film__year">{`Year: ${film.year}`}</span>
-          <img
-            src={film.image}
-            alt={`${film.title}`}
-            className="film__image"
-            width={317}
-            height={450}
-          />
+        <li className="film-container" key={film.id}>
+          <FilmCard film={film} />
         </li>
       ))}
     </ul>
