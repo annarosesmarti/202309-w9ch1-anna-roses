@@ -11,7 +11,26 @@ const useFilmsApi = () => {
     return films;
   }, [apiUrl]);
 
-  return { getFilms };
+  const setWatchStatus = useCallback(
+    async (filmId: number, isWatched: boolean): Promise<boolean> => {
+      const response = await fetch(`${apiUrl}/films/${filmId}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ isWatched: !isWatched }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Error on changing film's watch status");
+      }
+
+      return isWatched;
+    },
+    [apiUrl],
+  );
+
+  return { getFilms, setWatchStatus };
 };
 
 export default useFilmsApi;
