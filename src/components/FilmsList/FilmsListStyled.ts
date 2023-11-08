@@ -9,7 +9,6 @@ const FilmsListStyled = styled.ul`
 
   .film-container {
     width: 100%;
-    height: auto;
     object-fit: contain;
     aspect-ratio: auto;
   }

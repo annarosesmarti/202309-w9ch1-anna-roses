@@ -22,6 +22,12 @@ const FilmCardStyled = styled.div`
   .film__image {
     object-fit: contain;
     width: 100%;
+    height: auto;
+  }
+
+  .film__checkbox {
+    width: 15px;
+    height: 15px;
   }
 `;
 
