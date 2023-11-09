@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import { FilmsStructure } from "../../store/types";
 import FilmCardStyled from "./FilmCardStyled";
 import { useCallback } from "react";
-import { toggleWatchedFilmActionCreator } from "../../store/features/filmsSlice";
+import { toggleWatchedFilmActionCreator } from "../../store/features/films/filmsSlice";
 import useFilmsApi from "../../hooks/useFilmsApi";
 
 interface FilmsProps {
