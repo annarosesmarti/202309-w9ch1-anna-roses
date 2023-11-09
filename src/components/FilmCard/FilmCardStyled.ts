@@ -24,12 +24,6 @@ const FilmCardStyled = styled.div`
     width: 100%;
     height: auto;
   }
-
-  .film__checkbox {
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-  }
 `;
 
 export default FilmCardStyled;

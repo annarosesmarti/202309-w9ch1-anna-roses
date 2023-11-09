@@ -28,6 +28,21 @@ ul {
   margin-top: 0;
   padding: 0;
 }
+
+input {
+  font: inherit;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font: inherit;
+}
 `;
 
 export default GlobalStyle;
