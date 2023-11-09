@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import useFilmsApi from "../../hooks/useFilmsApi";
-import { loadFilmsActionCreator } from "../../store/features/filmsSlice";
+import { loadFilmsActionCreator } from "../../store/features/films/filmsSlice";
 import FilmsList from "../../components/FilmsList/FilmsList";
 import HomePageStyled from "./HomePageStyled";
 
