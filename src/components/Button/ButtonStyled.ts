@@ -16,6 +16,10 @@ const ButtonStyled = styled.div`
       background-color: ${({ theme }) => theme.color.mainBackground};
       color: ${({ theme }) => theme.color.mainFontColor};
     }
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   .active {
