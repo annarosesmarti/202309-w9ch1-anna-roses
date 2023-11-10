@@ -24,7 +24,7 @@ const FilmCard = ({ film }: FilmsProps): React.ReactElement => {
       <h2 className="film__title">{film.title}</h2>
       <span className="film__year">{`Year: ${film.year}`}</span>
       <label className="film__label">
-        Watched
+        Watched{" "}
         <input
           className="film__checkbox"
           type="checkbox"
