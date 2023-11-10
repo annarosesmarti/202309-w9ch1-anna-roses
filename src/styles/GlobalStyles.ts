@@ -43,6 +43,11 @@ button {
   background-color: transparent;
   font: inherit;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 `;
 
 export default GlobalStyle;
