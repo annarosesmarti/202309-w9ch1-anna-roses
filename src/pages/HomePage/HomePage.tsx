@@ -4,6 +4,7 @@ import useFilmsApi from "../../hooks/useFilmsApi";
 import { loadFilmsActionCreator } from "../../store/features/films/filmsSlice";
 import FilmsList from "../../components/FilmsList/FilmsList";
 import HomePageStyled from "./HomePageStyled";
+import NavMenu from "../../components/NavMenu/NavMenu";
 
 const HomePage = (): React.ReactElement => {
   const { getFilms } = useFilmsApi();
@@ -22,6 +23,7 @@ const HomePage = (): React.ReactElement => {
         <h1 className="title">Harry Potter</h1>
         <span className="title__text">· The movies ·</span>
       </header>
+      <NavMenu />
       <FilmsList />
     </HomePageStyled>
   );
