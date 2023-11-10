@@ -1,3 +1,4 @@
+import Button from "../Button/Button";
 import FilmFormStyled from "./FilmFormStyled";
 
 const FilmForm = (): React.ReactElement => {
@@ -27,7 +28,7 @@ const FilmForm = (): React.ReactElement => {
         </label>
         <input type="checkbox" id="checkbox" className="form__label" required />
       </div>
-      <button className="form__button">Send</button>
+      <Button buttonText={"Send"} buttonColor="button__black" />
     </FilmFormStyled>
   );
 };

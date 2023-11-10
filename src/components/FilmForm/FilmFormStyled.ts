@@ -29,15 +29,6 @@ const FilmFormStyled = styled.form`
       display: flex;
       flex-direction: row;
     }
-
-    &__button {
-      padding: 8px 15px;
-      background-color: ${({ theme }) => theme.color.containerBackground};
-      font-size: ${({ theme }) => theme.typography.cardTextSize};
-      color: ${({ theme }) => theme.color.titleFontColor};
-      border-radius: 5px;
-      margin-top: 15px;
-    }
   }
 `;
 
