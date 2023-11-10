@@ -42,6 +42,7 @@ button {
   border: none;
   background-color: transparent;
   font: inherit;
+  cursor: pointer;
 }
 
 a {

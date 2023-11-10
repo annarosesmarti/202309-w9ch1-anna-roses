@@ -21,6 +21,10 @@ const NavMenuStyled = styled.nav`
       margin-top: 15px;
       background-color: ${({ theme }) => theme.color.containerBackground};
       color: ${({ theme }) => theme.color.titleFontColor};
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 
